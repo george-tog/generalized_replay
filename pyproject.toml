@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "replay-hmm"
+version = "0.1.0"
+description = "HMM and traditional analyses of hippocampal replay trajectories (Lustig, Grosmark & Buzsaki, Pfeiffer & Foster)."
+requires-python = ">=3.12"
+# Unpinned: environment.yml holds the tested versions. These are the third-party modules the
+# code imports directly.
+#
+# ssm is deliberately NOT listed. The kernels need the modified fork vendored at
+# third_party/ssm (environment.yml: `-e ./third_party/ssm`); the PyPI project named "ssm" is an
+# unrelated package, so a dependency on it would install the wrong code. numba and scikit-learn
+# are imported only by ssm and arrive with it (third_party/ssm/setup.cfg install_requires).
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "matplotlib",
+    "cycler",
+    "seaborn",
+    "h5py",
+    "joblib",
+    "tqdm",
+    "autograd",
+]
+
+[project.scripts]
+replay-hmm = "replay_hmm.cli.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

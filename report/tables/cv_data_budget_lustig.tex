@@ -1,0 +1,38 @@
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{llrrrrrr}
+    \toprule
+    & & & & \multicolumn{2}{c}{Events per fold} & \multicolumn{2}{c}{Time bins per fold} \\
+    \cmidrule(lr){5-6} \cmidrule(lr){7-8}
+    Animal & Session & $K$ & $N_{\mathrm{events}}$ & Train & Validation & Train & Validation \\
+    \midrule
+    Rat 1 & rec01 & 5 & 97 & 77.6 & 19.4 & 540.0 & 135.0 \\
+     & rec02 & 5 & 105 & 84.0 & 21.0 & 532.0 & 133.0 \\
+     & rec03 & 5 & 180 & 144.0 & 36.0 & 1001.6 & 250.4 \\
+     & rec04 & 5 & 65 & 52.0 & 13.0 & 324.8 & 81.2 \\
+     & rec05 & 5 & 99 & 79.2 & 19.8 & 539.2 & 134.8 \\
+    \addlinespace
+    Rat 2 & rec01 & 4 & 4 & 3.0 & 1.0 & 17.2 & 5.8 \\
+     & rec02 & 5 & 27 & 21.6 & 5.4 & 132.8 & 33.2 \\
+     & rec03 & 5 & 14 & 11.2 & 2.8 & 66.4 & 16.6 \\
+     & rec04 & 5 & 42 & 33.6 & 8.4 & 214.4 & 53.6 \\
+    \addlinespace
+    Rat 3 & rec01 & 5 & 206 & 164.8 & 41.2 & 1228.8 & 307.2 \\
+     & rec02 & 5 & 109 & 87.2 & 21.8 & 642.4 & 160.6 \\
+     & rec03 & 5 & 131 & 104.8 & 26.2 & 818.4 & 204.6 \\
+     & rec04 & 5 & 76 & 60.8 & 15.2 & 505.6 & 126.4 \\
+     & rec05 & 5 & 136 & 108.8 & 27.2 & 791.2 & 197.8 \\
+     & rec06 & 5 & 66 & 52.8 & 13.2 & 376.0 & 94.0 \\
+    \addlinespace
+    Rat 4 & rec01 & 5 & 41 & 32.8 & 8.2 & 216.0 & 54.0 \\
+    \addlinespace
+    Rat 5 & rec01 & 5 & 26 & 20.8 & 5.2 & 160.0 & 40.0 \\
+    \addlinespace
+    Rat 6 & rec01 & 5 & 167 & 133.6 & 33.4 & 1004.0 & 251.0 \\
+    \addlinespace
+    Rat 7 & rec01 & 5 & 24 & 19.2 & 4.8 & 181.6 & 45.4 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Cross-validation data budget for the Lustig sessions (decode bin 10\,ms, step 10\,ms, spatial bin 3.5\,cm). Events are model-based trajectory events; bins are decode time bins. Train and validation columns are means over the $K$ folds; Rat 2 rec01 has too few events for five folds, so $K$ drops to four.}
+  \label{tab:cv-budget-lustig}
+\end{table}

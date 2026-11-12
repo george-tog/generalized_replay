@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{llrrrrrr}
+    \toprule
+    & & & & \multicolumn{2}{c}{Events per fold} & \multicolumn{2}{c}{Time bins per fold} \\
+    \cmidrule(lr){5-6} \cmidrule(lr){7-8}
+    Animal & Session & $K$ & $N_{\mathrm{events}}$ & Train & Validation & Train & Validation \\
+    \midrule
+    Rat 1 & Linear1 & 5 & 124 & 99.2 & 24.8 & 956.8 & 239.2 \\
+     & Linear2 & 5 & 215 & 172.0 & 43.0 & 1986.4 & 496.6 \\
+     & Linear3 & 5 & 366 & 292.8 & 73.2 & 3606.4 & 901.6 \\
+     & Linear4 & 5 & 78 & 62.4 & 15.6 & 596.0 & 149.0 \\
+     & Linear5 & 5 & 139 & 111.2 & 27.8 & 1066.4 & 266.6 \\
+     & Linear6 & 5 & 219 & 175.2 & 43.8 & 1863.2 & 465.8 \\
+    \addlinespace
+    Rat 2 & Linear1 & 5 & 220 & 176.0 & 44.0 & 1952.8 & 488.2 \\
+     & Linear2 & 5 & 242 & 193.6 & 48.4 & 2282.4 & 570.6 \\
+    \addlinespace
+    Rat 3 & Linear1 & 5 & 203 & 162.4 & 40.6 & 2232.8 & 558.2 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Cross-validation data budget for the Pfeiffer \& Foster linear-track sessions (decode bin 10\,ms, step 10\,ms, HMM bin 4\,cm). Events are model-based trajectory events; bins are decode time bins. Train and validation columns are means over the $K$ folds.}
+  \label{tab:cv-budget-pfeiffer}
+\end{table}

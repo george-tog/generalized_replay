@@ -1,0 +1,19 @@
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{llrrrrrr}
+    \toprule
+    & & & & \multicolumn{2}{c}{Events per fold} & \multicolumn{2}{c}{Time bins per fold} \\
+    \cmidrule(lr){5-6} \cmidrule(lr){7-8}
+    Animal & Session & $K$ & $N_{\mathrm{events}}$ & Train & Validation & Train & Validation \\
+    \midrule
+    Rat 1 & 10252013 & 5 & 65 & 52.0 & 13.0 & 970.4 & 242.6 \\
+    \addlinespace
+    Rat 3 & 09012014 & 5 & 44 & 35.2 & 8.8 & 888.0 & 222.0 \\
+     & 09172014 & 5 & 31 & 24.8 & 6.2 & 592.0 & 148.0 \\
+    \addlinespace
+    Rat 4 & 08022013 & 5 & 36 & 28.8 & 7.2 & 540.0 & 135.0 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Cross-validation data budget for the Buzsaki linear-track sessions on the traditional-criteria replay events (decode bin 10\,ms, step 10\,ms, HMM bin 2\,cm). Events are the accepted traditional replay events; bins are decode time bins. Train and validation columns are means over the $K$ folds. Rat 2 has no accepted traditional replay events, so it has no fit and no row.}
+  \label{tab:cv-budget-buzsaki-tradreplay}
+\end{table}

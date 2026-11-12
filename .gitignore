@@ -1,0 +1,20 @@
+/data/
+/results/
+/figures/
+*.mat
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+# setuptools output of a non-editable `pip install .` / `pip wheel .`
+/build/
+/dist/
+.DS_Store
+# `jupyter lab notebooks/fig1_fig2_kernels.ipynb` (the Fig 1/2A README row)
+.ipynb_checkpoints/
+/slurm_out/*
+!/slurm_out/.gitkeep
+third_party/ssm/ssm/cstats.cpp
+third_party/ssm/ssm/*.so
+third_party/ssm/build/
+/cluster/cluster.env

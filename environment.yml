@@ -1,0 +1,34 @@
+# Reproduces the README rows. Keep the name `tcmsr`: the sbatch job script runs `mamba activate tcmsr`.
+#   conda env create -f environment.yml && conda activate tcmsr
+# ssm is a modified fork of lindermanlab/ssm (base eb6c8aa) that provides the paper's kernels.
+# It builds a C++ Cython extension: a system C++ compiler is required
+# (macOS: xcode-select --install; Linux: g++). The pinned versions are the tested ones.
+name: tcmsr
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - numpy=2.3.4
+  - scipy=1.16.2
+  - pandas=2.3.3
+  - matplotlib=3.10.7
+  - seaborn=0.13.2
+  - h5py=3.15.1
+  - joblib=1.5.2
+  - tqdm=4.67.3
+  - cycler=0.12.1
+  - autograd=1.8.0        # ssm
+  - numba=0.62.1          # ssm messages
+  - scikit-learn=1.7.2    # imported at `import ssm`
+  - cython=3.2.0          # ssm build
+  - setuptools=80.9.0
+  - wheel
+  - pytest=9.0.2
+  - ipykernel=7.0.1       # Fig 1/2A notebook (kernelspec "tcmsr")
+  - jupyterlab>=4         # README `jupyter lab`
+  - nbconvert=7.16.6      # headless notebook runs: `jupyter nbconvert --execute`
+  - nbclient=0.10.4
+  - pip:
+      - -e ./third_party/ssm            # the modified ssm fork (third_party/ssm/pyproject.toml)
+      - -e .                            # this repo, as the replay_hmm package (pyproject.toml)

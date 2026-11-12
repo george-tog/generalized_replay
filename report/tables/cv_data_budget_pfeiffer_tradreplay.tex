@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{llrrrrrr}
+    \toprule
+    & & & & \multicolumn{2}{c}{Events per fold} & \multicolumn{2}{c}{Time bins per fold} \\
+    \cmidrule(lr){5-6} \cmidrule(lr){7-8}
+    Animal & Session & $K$ & $N_{\mathrm{events}}$ & Train & Validation & Train & Validation \\
+    \midrule
+    Rat 1 & Linear1 & 5 & 75 & 60.0 & 15.0 & 1129.6 & 282.4 \\
+     & Linear2 & 5 & 119 & 95.2 & 23.8 & 1726.4 & 431.6 \\
+     & Linear3 & 5 & 155 & 124.0 & 31.0 & 2340.0 & 585.0 \\
+     & Linear4 & 5 & 36 & 28.8 & 7.2 & 472.0 & 118.0 \\
+     & Linear5 & 5 & 39 & 31.2 & 7.8 & 540.8 & 135.2 \\
+     & Linear6 & 5 & 48 & 38.4 & 9.6 & 661.6 & 165.4 \\
+    \addlinespace
+    Rat 2 & Linear1 & 5 & 117 & 93.6 & 23.4 & 1839.2 & 459.8 \\
+     & Linear2 & 5 & 108 & 86.4 & 21.6 & 1801.6 & 450.4 \\
+    \addlinespace
+    Rat 3 & Linear1 & 5 & 120 & 96.0 & 24.0 & 1940.8 & 485.2 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Cross-validation data budget for the Pfeiffer \& Foster linear-track sessions on the traditional-criteria replay events (decode bin 10\,ms, step 10\,ms, HMM bin 4\,cm). Events are the accepted traditional replay events; bins are decode time bins. Train and validation columns are means over the $K$ folds.}
+  \label{tab:cv-budget-pfeiffer-tradreplay}
+\end{table}

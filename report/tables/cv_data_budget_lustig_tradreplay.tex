@@ -1,0 +1,38 @@
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{llrrrrrr}
+    \toprule
+    & & & & \multicolumn{2}{c}{Events per fold} & \multicolumn{2}{c}{Time bins per fold} \\
+    \cmidrule(lr){5-6} \cmidrule(lr){7-8}
+    Animal & Session & $K$ & $N_{\mathrm{events}}$ & Train & Validation & Train & Validation \\
+    \midrule
+    Rat 1 & rec01 & 5 & 108 & 86.4 & 21.6 & 2300.8 & 575.2 \\
+     & rec02 & 5 & 121 & 96.8 & 24.2 & 2732.8 & 683.2 \\
+     & rec03 & 5 & 110 & 88.0 & 22.0 & 2245.6 & 561.4 \\
+     & rec04 & 5 & 44 & 35.2 & 8.8 & 1006.4 & 251.6 \\
+     & rec05 & 5 & 109 & 87.2 & 21.8 & 2675.2 & 668.8 \\
+    \addlinespace
+    Rat 2 & rec01 & 5 & 45 & 36.0 & 9.0 & 1254.4 & 313.6 \\
+     & rec02 & 5 & 66 & 52.8 & 13.2 & 1226.4 & 306.6 \\
+     & rec03 & 5 & 56 & 44.8 & 11.2 & 1453.6 & 363.4 \\
+     & rec04 & 5 & 63 & 50.4 & 12.6 & 1196.8 & 299.2 \\
+    \addlinespace
+    Rat 3 & rec01 & 5 & 128 & 102.4 & 25.6 & 2534.4 & 633.6 \\
+     & rec02 & 5 & 64 & 51.2 & 12.8 & 1379.2 & 344.8 \\
+     & rec03 & 5 & 67 & 53.6 & 13.4 & 1481.6 & 370.4 \\
+     & rec04 & 5 & 44 & 35.2 & 8.8 & 948.0 & 237.0 \\
+     & rec05 & 5 & 49 & 39.2 & 9.8 & 1112.0 & 278.0 \\
+     & rec06 & 5 & 60 & 48.0 & 12.0 & 1536.8 & 384.2 \\
+    \addlinespace
+    Rat 4 & rec01 & 5 & 25 & 20.0 & 5.0 & 588.8 & 147.2 \\
+    \addlinespace
+    Rat 5 & rec01 & 5 & 13 & 10.4 & 2.6 & 333.6 & 83.4 \\
+    \addlinespace
+    Rat 6 & rec01 & 5 & 55 & 44.0 & 11.0 & 1508.8 & 377.2 \\
+    \addlinespace
+    Rat 7 & rec01 & 5 & 10 & 8.0 & 2.0 & 204.8 & 51.2 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Cross-validation data budget for the Lustig sessions on the traditional-criteria replay events (decode bin 10\,ms, step 10\,ms, spatial bin 3.5\,cm). Events are the accepted traditional replay events; bins are decode time bins. Train and validation columns are means over the $K$ folds; every session clears five folds on this event set.}
+  \label{tab:cv-budget-lustig-tradreplay}
+\end{table}

@@ -1,0 +1,21 @@
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{llrrrrrr}
+    \toprule
+    & & & & \multicolumn{2}{c}{Events per fold} & \multicolumn{2}{c}{Time bins per fold} \\
+    \cmidrule(lr){5-6} \cmidrule(lr){7-8}
+    Animal & Session & $K$ & $N_{\mathrm{events}}$ & Train & Validation & Train & Validation \\
+    \midrule
+    Rat 1 & 10252013 & 5 & 75 & 60.0 & 15.0 & 521.6 & 130.4 \\
+    \addlinespace
+    Rat 2 & 06272013 & 4 & 4 & 3.0 & 1.0 & 22.5 & 7.5 \\
+    \addlinespace
+    Rat 3 & 09012014 & 5 & 15 & 12.0 & 3.0 & 86.4 & 21.6 \\
+     & 09172014 & 5 & 9 & 7.2 & 1.8 & 52.8 & 13.2 \\
+    \addlinespace
+    Rat 4 & 08022013 & 5 & 31 & 24.8 & 6.2 & 194.4 & 48.6 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Cross-validation data budget for the Buzsaki linear-track sessions (decode bin 10\,ms, step 10\,ms, HMM bin 2\,cm). Events are model-based trajectory events; bins are decode time bins. Train and validation columns are means over the $K$ folds.}
+  \label{tab:cv-budget-buzsaki}
+\end{table}
